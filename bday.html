@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Happy Birthday</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3, #89f7fe, #66a6ff);
+            background-size: 400% 400%;
+            animation: bg 8s infinite alternate;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes bg {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #ff4d6d;
+            animation: glow 1s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px pink;
+            }
+
+            to {
+                text-shadow: 0 0 20px red;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+        }
+
+        .cake {
+            font-size: 70px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 25px;
+            background: #ff4d6d;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ff1e4d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>🎉 Happy Birthday 🎉</h1>
+
+        <div class="cake">🎂🎈🎁</div>
+
+        <p>Wishing you a day full of happiness and smiles!</p>
+
+        <button onclick="window.location.href='WISHES.html'">Open Birthday Wish</button>
+
+    </div>
+
+</body>
+
+</html>
